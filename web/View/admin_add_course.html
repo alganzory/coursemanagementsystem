@@ -1,0 +1,116 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <head>
+       <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <header>
+        <nav style="background: #195b7c" >  
+            <label style="color: white; padding-top: 15px; margin-left: 30px">UTM Course Management System</label>
+            
+            <ul class="navs">
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+            <ul class="navs">
+              <li><a href="admin_profile.html" >Profile</a></li>
+            </ul>
+            <ul class="navs">
+              <li><a href="courses.html">Courses</a></li>
+            </ul>
+            <ul class="navs">
+              <li><a href="request.html">Requests</a></li>
+            </ul>
+            <ul class="navs">
+              <li><a href="add_course.html" class="active">Add Course</a></li>
+            </ul>
+            <ul class="navs">
+                <li><a href="admin_dashboard.html" >Home</a></li>
+            </ul>
+        </nav>
+        </nav>
+	
+    </header>
+
+  <div class="container">
+      
+    <div id="signupbox" style=" margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="panel-title">Add a new course</div>
+        </div>  
+        <div class="panel-body" >
+            <form id="signupform" class="form-horizontal" role="form">
+
+                <div id="signupalert" style="display:none" class="alert alert-danger">
+                    <p>Error:</p>
+                    <span></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="code" class="col-md-3 control-label">Course Code</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="course_code" placeholder="Course Code">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name" class="col-md-3 control-label">Course Name</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="coursename" placeholder="Course Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="credithours" class="col-md-3 control-label">Credit Hours</label>
+                    <div class="col-md-9">
+                        <input type="number" min="1" class="form-control" name="credithours" placeholder="Credit Hours">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="section" class="col-md-3 control-label">Number Of Sections</label>
+                    <div class="col-md-9">
+                        <input type="number" class="form-control" name="secction" placeholder="Number Of Section">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="icode" class="col-md-3 control-label">Lecturer(s)</label>
+                    <div class="col-md-9">
+                        <select name="lecturer" class="form-control">
+                            <option value="">Select Lecturer</option>
+                            <option value="1">Morgan James</option>
+                            <option value="2">John Smith</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="section" class="col-md-3 control-label">Maximum Number Of Student</label>
+                    <div class="col-md-9">
+                        <input type="number" class="form-control" name="student" placeholder="Maximum Number Of Student">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <!-- Button -->                                        
+                    <div class="col-md-offset-3 col-md-9">
+                        <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Cancel</button>
+
+                        <button id="btn-signup" type="button" class="btn btn-info" style="margin-left: 10px"><i class="icon-hand-right"></i> &nbsp Add Course</button>
+                    </div>
+                </div>
+            </form>
+         </div>
+    </div>
+</div>
+        
+</div>
+    
